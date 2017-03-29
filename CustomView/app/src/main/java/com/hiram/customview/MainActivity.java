@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        iv = (ImageView) findViewById(R.id.iv);
-        watchview = (WatchView) findViewById(R.id.watchview);
+//        iv = (ImageView) findViewById(R.id.iv);
+//        watchview = (WatchView) findViewById(R.id.watchview);
 //        clipView = (ClipView) findViewById(R.id.clipView);
 //        ballview = (BallMoveView) findViewById(R.id.ballview);
 
@@ -72,12 +72,12 @@ public class MainActivity extends AppCompatActivity {
         canvas.drawPath(path1, paint);
 //        path1.op(path2, Path.Op.DIFFERENCE);
         iv.setImageBitmap(bmpBuffer);*/
-        new Timer().schedule(new TimerTask() {
-            @Override
-            public void run() {
-                watchview.postInvalidate();
-            }
-        }, 0, 1000);
+//        new Timer().schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                watchview.postInvalidate();
+//            }
+//        }, 0, 1000);
     }
     int bmpHeight = 100;
     int bmpWidth = 100;
