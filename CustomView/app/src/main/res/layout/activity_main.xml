@@ -23,8 +23,12 @@
         android:id="@+id/ballview"
         android:layout_width="match_parent"
         android:layout_height="50dp" />-->
-    <com.hiram.customview.CoordinateView
+<!--    <com.hiram.customview.CoordinateView
         android:id="@+id/coordinateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.hiram.customview.ClipView
+        android:id="@+id/clipView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>

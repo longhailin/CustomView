@@ -21,11 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView iv;
     BallMoveView ballview;
+    ClipView clipView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iv = (ImageView) findViewById(R.id.iv);
+        clipView = (ClipView) findViewById(R.id.clipView);
 //        ballview = (BallMoveView) findViewById(R.id.ballview);
 
        /* Bitmap bmpBuffer = Bitmap.createBitmap(500, 800,
@@ -68,12 +70,12 @@ public class MainActivity extends AppCompatActivity {
         canvas.drawPath(path1, paint);
 //        path1.op(path2, Path.Op.DIFFERENCE);
         iv.setImageBitmap(bmpBuffer);*/
-//        new Timer().schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                ballview.postInvalidate();
-//            }
-//        }, 200, 50);
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                clipView.postInvalidate();
+            }
+        }, 200, 500);
     }
     int bmpHeight = 100;
     int bmpWidth = 100;
