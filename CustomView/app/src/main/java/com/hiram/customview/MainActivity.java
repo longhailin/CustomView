@@ -22,12 +22,14 @@ public class MainActivity extends AppCompatActivity {
     ImageView iv;
     BallMoveView ballview;
     ClipView clipView;
+    WatchView watchview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         iv = (ImageView) findViewById(R.id.iv);
-        clipView = (ClipView) findViewById(R.id.clipView);
+        watchview = (WatchView) findViewById(R.id.watchview);
+//        clipView = (ClipView) findViewById(R.id.clipView);
 //        ballview = (BallMoveView) findViewById(R.id.ballview);
 
        /* Bitmap bmpBuffer = Bitmap.createBitmap(500, 800,
@@ -73,9 +75,9 @@ public class MainActivity extends AppCompatActivity {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                clipView.postInvalidate();
+                watchview.postInvalidate();
             }
-        }, 200, 500);
+        }, 0, 1000);
     }
     int bmpHeight = 100;
     int bmpWidth = 100;

@@ -27,8 +27,12 @@
         android:id="@+id/coordinateView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />-->
-    <com.hiram.customview.ClipView
+    <!--<com.hiram.customview.ClipView
         android:id="@+id/clipView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.hiram.customview.WatchView
+        android:id="@+id/watchview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
