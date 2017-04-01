@@ -7,18 +7,10 @@
     android:orientation="vertical"
     tools:context="com.hiram.customview.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-    <ImageView
+<!--    <ImageView
         android:id="@+id/iv"
         android:layout_width="150dp"
-        android:layout_height="150dp" />
+        android:layout_height="150dp" />-->
    <!-- <com.hiram.customview.BallMoveView
         android:id="@+id/ballview"
         android:layout_width="match_parent"
@@ -31,8 +23,33 @@
         android:id="@+id/clipView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />-->
-    <com.hiram.customview.WatchView
+   <!-- <com.hiram.customview.WatchView
+        android:id="@+id/watchview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <com.hiram.customview.SizeViewGroup
         android:id="@+id/watchview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+    <!--<com.hiram.customview.CornerLayout
+        android:id="@+id/watchview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_blue_bright"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_dark"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_red_dark"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@android:color/holo_green_dark"/>
+    </com.hiram.customview.CornerLayout>-->
 </LinearLayout>
